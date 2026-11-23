@@ -1,11 +1,14 @@
 """Run the classifier over a labelled set and score it.
 
-    python3 evaluate.py --prompt v1 --set dev
-    python3 evaluate.py --prompt v2 --set dev --thinking
-    python3 evaluate.py --compare results/dev-v1.json results/dev-v2.json
+    python3 evaluate.py --prompt v1 --set dev --workers 1
+    python3 evaluate.py --prompt v3 --set dev --workers 1 --thinking
+    LLM_MODEL=gemma4:12b python3 evaluate.py --prompt v4 --set test2 --workers 1
+    python3 evaluate.py --compare results/dev-gemma4-e4b-v1.json results/dev-gemma4-12b-v4.json
 
-Each run is saved to results/<set>-<prompt>[-thinking].json so runs can be
-compared later without calling the model again.
+Each run is saved to results/<set>-<model>-<prompt>[-thinking].json so runs
+can be compared later without calling the model again. Use --workers 1 with
+Ollama: it serves one request at a time, so parallel workers only queue and
+inflate the per-letter timings.
 """
 import argparse
 import json
