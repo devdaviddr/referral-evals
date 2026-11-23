@@ -1,4 +1,4 @@
-# referral-evals
+# referral-triage-evals
 
 An LLM that sorts GP referral letters by specialty and urgency, and the eval that decides how far it can be trusted.
 
@@ -41,7 +41,7 @@ Python 3 standard library only. Works with any OpenAI-compatible endpoint; the d
 
 ```bash
 ollama pull gemma4:e4b
-git clone https://github.com/devdaviddr/referral-evals && cd referral-evals
+git clone https://github.com/devdaviddr/referral-triage-evals && cd referral-triage-evals
 
 # classify one letter
 echo "58yo smoker, 3 weeks of chest tightness walking uphill." | python3 classify.py
