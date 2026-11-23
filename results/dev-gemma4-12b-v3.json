@@ -1,0 +1,2049 @@
+{
+  "name": "dev-gemma4-12b-v3",
+  "model": "gemma4-12b",
+  "prompt": "v3",
+  "thinking": false,
+  "wall_seconds": 1151.5,
+  "score": {
+    "n": 120,
+    "errors": 0,
+    "specialty_accuracy": 1.0,
+    "urgency_accuracy": 0.917,
+    "both_correct": 0.917,
+    "hard_both_correct": 0.75,
+    "urgency": {
+      "urgent": {
+        "precision": 0.958,
+        "recall": 0.958,
+        "support": 24
+      },
+      "semi-urgent": {
+        "precision": 0.81,
+        "recall": 0.944,
+        "support": 36
+      },
+      "routine": {
+        "precision": 0.981,
+        "recall": 0.883,
+        "support": 60
+      }
+    },
+    "specialty": {
+      "cardiology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 20
+      },
+      "orthopaedics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 20
+      },
+      "neurology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 20
+      },
+      "gastroenterology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 20
+      },
+      "dermatology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 20
+      },
+      "respiratory": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 20
+      }
+    },
+    "urgent_missed": 1,
+    "urgent_sent_to_routine": 0,
+    "triage_cost": 14,
+    "urgency_confusion": {
+      "routine -> routine": 53,
+      "routine -> semi-urgent": 7,
+      "semi-urgent -> routine": 1,
+      "semi-urgent -> semi-urgent": 34,
+      "semi-urgent -> urgent": 1,
+      "urgent -> semi-urgent": 1,
+      "urgent -> urgent": 23
+    },
+    "median_seconds": 9.55
+  },
+  "review_sweep": [
+    {
+      "bar": 0.0,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.083,
+      "urgent_missed_alone": 1
+    },
+    {
+      "bar": 0.5,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.083,
+      "urgent_missed_alone": 1
+    },
+    {
+      "bar": 0.6,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.083,
+      "urgent_missed_alone": 1
+    },
+    {
+      "bar": 0.7,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.083,
+      "urgent_missed_alone": 1
+    },
+    {
+      "bar": 0.8,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.083,
+      "urgent_missed_alone": 1
+    },
+    {
+      "bar": 0.85,
+      "handled_alone": 0.992,
+      "error_rate_when_alone": 0.076,
+      "urgent_missed_alone": 1
+    },
+    {
+      "bar": 0.9,
+      "handled_alone": 0.992,
+      "error_rate_when_alone": 0.076,
+      "urgent_missed_alone": 1
+    },
+    {
+      "bar": 0.95,
+      "handled_alone": 0.492,
+      "error_rate_when_alone": 0.017,
+      "urgent_missed_alone": 1
+    }
+  ],
+  "rows": [
+    {
+      "id": "dev-001",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Stable COPD with no exacerbations or acute symptoms; patient is seeking information on rehabilitation."
+      },
+      "error": null,
+      "seconds": 18.61
+    },
+    {
+      "id": "dev-002",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Patient seeking discussion on advanced lipid-lowering therapies (PCSK9 inhibitors) for hyperlipidaemia."
+      },
+      "error": null,
+      "seconds": 10.39
+    },
+    {
+      "id": "dev-003",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Stable epilepsy patient seeking pre-conception counseling and medication review."
+      },
+      "error": null,
+      "seconds": 9.25
+    },
+    {
+      "id": "dev-004",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Patient is in remission with stable markers and requires ongoing surveillance/management."
+      },
+      "error": null,
+      "seconds": 9.07
+    },
+    {
+      "id": "dev-005",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Recurrent exacerbations of bronchiectasis with Pseudomonas growth requiring long-term management."
+      },
+      "error": null,
+      "seconds": 9.31
+    },
+    {
+      "id": "dev-006",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "Progressing neurological deficit with motor weakness (foot drop) and nerve root compression."
+      },
+      "error": null,
+      "seconds": 9.06
+    },
+    {
+      "id": "dev-007",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "New exertional chest tightness in a patient with multiple cardiovascular risk factors (smoking, diabetes, hypertension) and family history of early MI."
+      },
+      "error": null,
+      "seconds": 10.45
+    },
+    {
+      "id": "dev-008",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Asymptomatic patient with stable degenerative mitral regurgitation requesting routine surveillance."
+      },
+      "error": null,
+      "seconds": 9.08
+    },
+    {
+      "id": "dev-009",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "Progressive neurological deficit with sensory loss and motor weakness requires urgent investigation."
+      },
+      "error": null,
+      "seconds": 9.69
+    },
+    {
+      "id": "dev-010",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Asymptomatic patient with known genotype seeking advice on monitoring and family screening."
+      },
+      "error": null,
+      "seconds": 8.82
+    },
+    {
+      "id": "dev-011",
+      "hard": true,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "New onset of black stools and significant drop in Hb with low ferritin suggests potential gastrointestinal bleeding."
+      },
+      "error": null,
+      "seconds": 10.2
+    },
+    {
+      "id": "dev-012",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "First-time witnessed seizure requires urgent investigation to rule out underlying pathology."
+      },
+      "error": null,
+      "seconds": 9.94
+    },
+    {
+      "id": "dev-013",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "Weight loss and dysphagia in an older patient require urgent investigation to rule out malignancy."
+      },
+      "error": null,
+      "seconds": 9.58
+    },
+    {
+      "id": "dev-014",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Patient seeking assessment for snoring/sleep apnea symptoms with no red flags or witnessed apnoeas."
+      },
+      "error": null,
+      "seconds": 9.59
+    },
+    {
+      "id": "dev-015",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Parkinsonian symptoms (tremor, rigidity, bradykinesia) requiring a formal diagnosis and management plan."
+      },
+      "error": null,
+      "seconds": 9.66
+    },
+    {
+      "id": "dev-016",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Mild, stable condition managed by podiatry with no signs of deterioration or acute pain."
+      },
+      "error": null,
+      "seconds": 9.6
+    },
+    {
+      "id": "dev-017",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Stable, long-standing osteoarthritis with no acute deterioration or functional loss."
+      },
+      "error": null,
+      "seconds": 9.39
+    },
+    {
+      "id": "dev-018",
+      "hard": true,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Persistent retrosternal pain and acid reflux symptoms requiring investigation via gastroscopy."
+      },
+      "error": null,
+      "seconds": 9.89
+    },
+    {
+      "id": "dev-019",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Asymptomatic patient with a positive screening test for latent TB requiring treatment."
+      },
+      "error": null,
+      "seconds": 8.76
+    },
+    {
+      "id": "dev-020",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Chronic shoulder pain causing functional concern in an older patient."
+      },
+      "error": null,
+      "seconds": 9.07
+    },
+    {
+      "id": "dev-021",
+      "hard": true,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "New pigmented streak on a nail (melanonychia) with widening and extension to the cuticle requires urgent investigation for subungual melanoma."
+      },
+      "error": null,
+      "seconds": 10.85
+    },
+    {
+      "id": "dev-022",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Asymptomatic patient requesting screening/advice for occupational exposure with normal baseline tests."
+      },
+      "error": null,
+      "seconds": 9.91
+    },
+    {
+      "id": "dev-023",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Asymptomatic patient seeking transfer of care and pre-conception advice for a known stable condition."
+      },
+      "error": null,
+      "seconds": 9.05
+    },
+    {
+      "id": "dev-024",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Cosmetic concern for a stable ganglion with full function and no symptoms."
+      },
+      "error": null,
+      "seconds": 9.86
+    },
+    {
+      "id": "dev-025",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Progression of moderate aortic stenosis requiring assessment for surgical intervention timing."
+      },
+      "error": null,
+      "seconds": 9.35
+    },
+    {
+      "id": "dev-026",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Asymptomatic new RBBB with structurally normal heart and no red flags."
+      },
+      "error": null,
+      "seconds": 9.52
+    },
+    {
+      "id": "dev-027",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Long-standing stable headaches with no red flags or neurological symptoms."
+      },
+      "error": null,
+      "seconds": 8.28
+    },
+    {
+      "id": "dev-028",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Surveillance for previously excised adenomas in an asymptomatic patient."
+      },
+      "error": null,
+      "seconds": 8.77
+    },
+    {
+      "id": "dev-029",
+      "hard": true,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "New exertional chest heaviness in a patient with hypertension and hyperlipidaemia requires urgent investigation."
+      },
+      "error": null,
+      "seconds": 9.83
+    },
+    {
+      "id": "dev-030",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "Patient is stable with normal tests and seeks a review for long-term monitoring of post-COVID symptoms."
+      },
+      "error": null,
+      "seconds": 9.84
+    },
+    {
+      "id": "dev-031",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Significant functional impairment and work disability due to chronic osteoarthritis despite conservative management."
+      },
+      "error": null,
+      "seconds": 10.13
+    },
+    {
+      "id": "dev-032",
+      "hard": true,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Chest pain is non-exertional and has had normal investigations (ECG, troponin, stress echo), making it low risk."
+      },
+      "error": null,
+      "seconds": 10.69
+    },
+    {
+      "id": "dev-033",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Symptomatic tachycardia causing significant anxiety and interference with daily activities/driving."
+      },
+      "error": null,
+      "seconds": 9.82
+    },
+    {
+      "id": "dev-034",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "Progressive motor weakness, wasting, and fasciculations in a middle-aged man are red flags for a progressive neurological condition like ALS."
+      },
+      "error": null,
+      "seconds": 10.81
+    },
+    {
+      "id": "dev-035",
+      "hard": true,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Stable congenital naevus with no clinical features of malignancy; referral is for patient reassurance."
+      },
+      "error": null,
+      "seconds": 9.16
+    },
+    {
+      "id": "dev-036",
+      "hard": true,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Progressive worsening of a tremor causing significant functional impairment and social embarrassment."
+      },
+      "error": null,
+      "seconds": 9.56
+    },
+    {
+      "id": "dev-037",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Asymptomatic soft systolic murmur in a healthy patient with no red flags."
+      },
+      "error": null,
+      "seconds": 8.73
+    },
+    {
+      "id": "dev-038",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "Hemoptysis and weight loss in a heavy smoker with hilar fullness are red flags for malignancy."
+      },
+      "error": null,
+      "seconds": 9.23
+    },
+    {
+      "id": "dev-039",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "Suspected bullous pemphigoid with weeping erosions in an elderly patient requires prompt specialist assessment."
+      },
+      "error": null,
+      "seconds": 10.44
+    },
+    {
+      "id": "dev-040",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Severe osteoarthritis with significant functional limitation and night pain requiring surgical consideration."
+      },
+      "error": null,
+      "seconds": 10.16
+    },
+    {
+      "id": "dev-041",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "New onset of heart failure symptoms (orthopnoea, oedema) and elevated NT-proBNP."
+      },
+      "error": null,
+      "seconds": 9.55
+    },
+    {
+      "id": "dev-042",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Stable presentation of suspected sarcoidosis with no acute respiratory distress or systemic red flags."
+      },
+      "error": null,
+      "seconds": 10.07
+    },
+    {
+      "id": "dev-043",
+      "hard": true,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Widespread eczema with significant impact on sleep and daily life despite potent topical treatment."
+      },
+      "error": null,
+      "seconds": 10.71
+    },
+    {
+      "id": "dev-044",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Severe inflammatory acne with atrophic scarring and failed systemic treatment requires specialist intervention."
+      },
+      "error": null,
+      "seconds": 9.26
+    },
+    {
+      "id": "dev-045",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Stable chronic condition with no acute neurological deficits or rapid deterioration."
+      },
+      "error": null,
+      "seconds": 8.74
+    },
+    {
+      "id": "dev-046",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Persistent symptoms and elevated faecal calprotectin suggestive of IBD require investigation."
+      },
+      "error": null,
+      "seconds": 10.47
+    },
+    {
+      "id": "dev-047",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "Spiculated lung nodule in a heavy smoker requires urgent investigation to rule out malignancy."
+      },
+      "error": null,
+      "seconds": 9.43
+    },
+    {
+      "id": "dev-048",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Rising ALT and increasing HBV DNA levels in a patient with chronic hepatitis B require specialist assessment for antiviral therapy."
+      },
+      "error": null,
+      "seconds": 9.58
+    },
+    {
+      "id": "dev-049",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Benign-appearing fasciculations without clinical red flags or objective neurological deficit."
+      },
+      "error": null,
+      "seconds": 9.52
+    },
+    {
+      "id": "dev-050",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Chronic pain and significant functional impairment/work restriction despite conservative management."
+      },
+      "error": null,
+      "seconds": 9.88
+    },
+    {
+      "id": "dev-051",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "Suspected primary bone tumour with lytic lesion and periosteal reaction requires urgent investigation."
+      },
+      "error": null,
+      "seconds": 9.04
+    },
+    {
+      "id": "dev-052",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 1.0,
+        "reason": "Poorly controlled asthma requiring multiple steroid courses and an ED visit indicates a need for specialist intervention."
+      },
+      "error": null,
+      "seconds": 9.27
+    },
+    {
+      "id": "dev-053",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Patient is seeking reassurance for mild memory concerns with no evidence of rapid deterioration or significant functional deficit."
+      },
+      "error": null,
+      "seconds": 10.37
+    },
+    {
+      "id": "dev-054",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Symptomatic paroxysmal AF affecting work and quality of life requiring discussion of rhythm control/ablation."
+      },
+      "error": null,
+      "seconds": 10.0
+    },
+    {
+      "id": "dev-055",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Significant body surface area involvement and failure of multiple topical treatments requiring systemic therapy assessment."
+      },
+      "error": null,
+      "seconds": 9.76
+    },
+    {
+      "id": "dev-056",
+      "hard": true,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Incidental finding of a mildly dilated ascending aorta requires specialist assessment for surveillance and management."
+      },
+      "error": null,
+      "seconds": 9.59
+    },
+    {
+      "id": "dev-057",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "New pleural effusion and weight loss in a patient with asbestos exposure suggests potential malignancy."
+      },
+      "error": null,
+      "seconds": 9.28
+    },
+    {
+      "id": "dev-058",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Chronic symptoms with no red flags (no weight loss, anemia, or nocturnal symptoms) and normal investigations."
+      },
+      "error": null,
+      "seconds": 10.15
+    },
+    {
+      "id": "dev-059",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Long-standing keloid with no acute symptoms or rapid deterioration."
+      },
+      "error": null,
+      "seconds": 7.89
+    },
+    {
+      "id": "dev-060",
+      "hard": true,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Symptoms of breathlessness and elevated NT-proBNP suggest heart failure/diastolic dysfunction requiring specialist review."
+      },
+      "error": null,
+      "seconds": 10.67
+    },
+    {
+      "id": "dev-061",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Gradual hair thinning with family history and no acute symptoms; seeking specialist opinion on oral treatment."
+      },
+      "error": null,
+      "seconds": 9.29
+    },
+    {
+      "id": "dev-062",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "Slowly developing non-painful nodule with minimal functional impairment and no acute deterioration."
+      },
+      "error": null,
+      "seconds": 9.55
+    },
+    {
+      "id": "dev-063",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Asymptomatic patient seeking risk stratification due to family history; no acute symptoms or red flags."
+      },
+      "error": null,
+      "seconds": 9.57
+    },
+    {
+      "id": "dev-064",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Rectal bleeding for 6 months requiring specialist review/banding, but no red flags like weight loss or anaemia."
+      },
+      "error": null,
+      "seconds": 10.68
+    },
+    {
+      "id": "dev-065",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Chronic urticaria causing significant sleep disturbance and partial response to high-dose antihistamines."
+      },
+      "error": null,
+      "seconds": 9.29
+    },
+    {
+      "id": "dev-066",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Baseline skin check for surveillance due to family history and high risk occupation; no suspicious lesions identified."
+      },
+      "error": null,
+      "seconds": 9.55
+    },
+    {
+      "id": "dev-067",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Mild chronic dermatitis with no signs of infection or rapid deterioration."
+      },
+      "error": null,
+      "seconds": 7.9
+    },
+    {
+      "id": "dev-068",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "Suspected metastasis with a lucent lesion and risk of impending pathological fracture."
+      },
+      "error": null,
+      "seconds": 8.91
+    },
+    {
+      "id": "dev-069",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Stable post-concussion symptoms with normal neurological exam and request for clearance to return to sport."
+      },
+      "error": null,
+      "seconds": 9.27
+    },
+    {
+      "id": "dev-070",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Chronic migraine causing significant work interference and failure of multiple first-line treatments."
+      },
+      "error": null,
+      "seconds": 9.32
+    },
+    {
+      "id": "dev-071",
+      "hard": true,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Chronic headaches with no red flags or acute neurological deficits described."
+      },
+      "error": null,
+      "seconds": 8.72
+    },
+    {
+      "id": "dev-072",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Asymptomatic palpitations with low burden ectopics and normal investigations seeking reassurance."
+      },
+      "error": null,
+      "seconds": 8.77
+    },
+    {
+      "id": "dev-073",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Asymptomatic incidental finding with no red flags; patient seeking reassurance."
+      },
+      "error": null,
+      "seconds": 8.99
+    },
+    {
+      "id": "dev-074",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Stable chronic condition with no acute deterioration; patient seeking discussion of treatment options."
+      },
+      "error": null,
+      "seconds": 9.85
+    },
+    {
+      "id": "dev-075",
+      "hard": true,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Chronic rash with no reported red flags or acute deterioration."
+      },
+      "error": null,
+      "seconds": 8.23
+    },
+    {
+      "id": "dev-076",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Mechanical locking of the knee and failure of conservative management in a patient whose job requires being on his feet."
+      },
+      "error": null,
+      "seconds": 10.24
+    },
+    {
+      "id": "dev-077",
+      "hard": true,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Persistent dry cough for 4 months despite a trial of inhaled corticosteroids."
+      },
+      "error": null,
+      "seconds": 9.04
+    },
+    {
+      "id": "dev-078",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "Rapidly growing lesion in a patient with a history of multiple SCCs suggests a high risk of malignancy."
+      },
+      "error": null,
+      "seconds": 9.59
+    },
+    {
+      "id": "dev-079",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Incidental finding of hepatic steatosis with normal LFTs and low FIB-4 score in an asymptomatic patient."
+      },
+      "error": null,
+      "seconds": 9.04
+    },
+    {
+      "id": "dev-080",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Chronic mechanical back pain with no neurological red flags or acute deterioration."
+      },
+      "error": null,
+      "seconds": 9.49
+    },
+    {
+      "id": "dev-081",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Long-standing stable IBS symptoms with no red flags and normal investigations."
+      },
+      "error": null,
+      "seconds": 9.62
+    },
+    {
+      "id": "dev-082",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Significant functional impairment and restricted mobility with failed conservative management."
+      },
+      "error": null,
+      "seconds": 9.29
+    },
+    {
+      "id": "dev-083",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Surveillance for stable Barrett's oesophagus without red flags or symptoms."
+      },
+      "error": null,
+      "seconds": 9.3
+    },
+    {
+      "id": "dev-084",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Obstructive sleep apnoea with high Epworth score and obesity requires assessment for management of respiratory symptoms."
+      },
+      "error": null,
+      "seconds": 10.41
+    },
+    {
+      "id": "dev-085",
+      "hard": true,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.8,
+        "reason": "Abdominal pain requiring investigation, though non-specific and currently stable."
+      },
+      "error": null,
+      "seconds": 9.3
+    },
+    {
+      "id": "dev-086",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Progressive sensory loss and neuropathic pain symptoms requiring diagnostic investigation."
+      },
+      "error": null,
+      "seconds": 9.54
+    },
+    {
+      "id": "dev-087",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Long-standing stable condition with good control; patient seeking elective cosmetic/management advice."
+      },
+      "error": null,
+      "seconds": 9.57
+    },
+    {
+      "id": "dev-088",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "Long-standing stable tremor with no functional impairment or red flags."
+      },
+      "error": null,
+      "seconds": 8.81
+    },
+    {
+      "id": "dev-089",
+      "hard": true,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Palpitations in a middle-aged man require investigation to rule out underlying arrhythmia."
+      },
+      "error": null,
+      "seconds": 9.06
+    },
+    {
+      "id": "dev-090",
+      "hard": true,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "New episode of focal neurological deficit (numbness and clumsiness) in a smoker with hypertension requires urgent investigation."
+      },
+      "error": null,
+      "seconds": 9.6
+    },
+    {
+      "id": "dev-091",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "Stable chronic injury and elective consultation for return to sport."
+      },
+      "error": null,
+      "seconds": 9.29
+    },
+    {
+      "id": "dev-092",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "Iron deficiency anaemia with significant weight loss in an elderly patient requires urgent investigation for malignancy."
+      },
+      "error": null,
+      "seconds": 9.32
+    },
+    {
+      "id": "dev-093",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Positive tTG-IgA and iron deficiency in a patient with symptoms requiring diagnostic confirmation."
+      },
+      "error": null,
+      "seconds": 9.72
+    },
+    {
+      "id": "dev-094",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Removal of multiple benign skin tags with no red flags or rapid deterioration."
+      },
+      "error": null,
+      "seconds": 9.0
+    },
+    {
+      "id": "dev-095",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent",
+        "confidence": 1.0,
+        "reason": "Confirmed basal cell carcinoma requiring specialist management/Mohs surgery."
+      },
+      "error": null,
+      "seconds": 8.98
+    },
+    {
+      "id": "dev-096",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "Chronic, mild trigger finger with no functional impairment or rapid deterioration."
+      },
+      "error": null,
+      "seconds": 9.54
+    },
+    {
+      "id": "dev-097",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Patient has elevated liver enzymes and a high FIB-4 score suggesting potential advanced fibrosis."
+      },
+      "error": null,
+      "seconds": 9.62
+    },
+    {
+      "id": "dev-098",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Stable symptoms of restless legs syndrome with no red flags or rapid deterioration."
+      },
+      "error": null,
+      "seconds": 9.54
+    },
+    {
+      "id": "dev-099",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Request for elective removal of stable hardware causing minor irritation."
+      },
+      "error": null,
+      "seconds": 8.47
+    },
+    {
+      "id": "dev-100",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Patient experiencing a recurrence of seizures and requires medication adjustment."
+      },
+      "error": null,
+      "seconds": 8.85
+    },
+    {
+      "id": "dev-101",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Stable asthma requiring a clearance letter for employment; no acute symptoms or deterioration."
+      },
+      "error": null,
+      "seconds": 9.31
+    },
+    {
+      "id": "dev-102",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Recurrent patellar dislocations causing significant functional impairment and inability to participate in activities."
+      },
+      "error": null,
+      "seconds": 9.58
+    },
+    {
+      "id": "dev-103",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Progressive breathlessness in a patient with GOLD 3 COPD and multiple exacerbations requires clinical review."
+      },
+      "error": null,
+      "seconds": 10.7
+    },
+    {
+      "id": "dev-104",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "Stable seborrhoeic keratoses with no rapid changes or suspicious features."
+      },
+      "error": null,
+      "seconds": 9.68
+    },
+    {
+      "id": "dev-105",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "Painless jaundice with weight loss and biliary obstruction in an older patient requires urgent investigation for malignancy."
+      },
+      "error": null,
+      "seconds": 9.55
+    },
+    {
+      "id": "dev-106",
+      "hard": true,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "The patient has stable symptoms and a normal neurological exam; the request for urgency is due to patient anxiety rather than clinical deterioration."
+      },
+      "error": null,
+      "seconds": 10.3
+    },
+    {
+      "id": "dev-107",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Significant rotator cuff tears causing functional disability in a tradesman."
+      },
+      "error": null,
+      "seconds": 9.35
+    },
+    {
+      "id": "dev-108",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "Syncope during exertion in a young athlete with a family history of sudden cardiac death is a high-risk red flag."
+      },
+      "error": null,
+      "seconds": 9.58
+    },
+    {
+      "id": "dev-109",
+      "hard": true,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "Progressive breathlessness with significant desaturation on exertion and restrictive lung patterns requires urgent investigation."
+      },
+      "error": null,
+      "seconds": 10.45
+    },
+    {
+      "id": "dev-110",
+      "hard": true,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "New onset shortness of breath requiring investigation for potential asthma."
+      },
+      "error": null,
+      "seconds": 9.52
+    },
+    {
+      "id": "dev-111",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "Stable history of pneumothorax with no current symptoms; seeking pre-travel/activity clearance."
+      },
+      "error": null,
+      "seconds": 9.56
+    },
+    {
+      "id": "dev-112",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Resistant hypertension with evidence of LVH on ECG requires specialist assessment."
+      },
+      "error": null,
+      "seconds": 9.27
+    },
+    {
+      "id": "dev-113",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "New exertional chest tightness in a patient with known IHD requires urgent assessment."
+      },
+      "error": null,
+      "seconds": 9.05
+    },
+    {
+      "id": "dev-114",
+      "hard": true,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Stable mildly elevated ALT requiring specialist review for fibrosis assessment in the context of long-term methotrexate use."
+      },
+      "error": null,
+      "seconds": 10.43
+    },
+    {
+      "id": "dev-115",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Chronic inflammatory skin condition causing significant pain and impacting the patient's ability to work."
+      },
+      "error": null,
+      "seconds": 9.55
+    },
+    {
+      "id": "dev-116",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Chronic trigeminal neuralgia with significant impact on quality of life and medication side effects."
+      },
+      "error": null,
+      "seconds": 8.78
+    },
+    {
+      "id": "dev-117",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "Suspicious mole with irregular features, nodular growth, and bleeding suggests possible melanoma."
+      },
+      "error": null,
+      "seconds": 9.76
+    },
+    {
+      "id": "dev-118",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Long-standing stable condition with no acute pain or functional impairment."
+      },
+      "error": null,
+      "seconds": 8.78
+    },
+    {
+      "id": "dev-119",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Chronic symptoms with partial response to high-dose PPI therapy requiring diagnostic investigation."
+      },
+      "error": null,
+      "seconds": 10.15
+    },
+    {
+      "id": "dev-120",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "Screening request due to family history of colorectal cancer in an asymptomatic patient."
+      },
+      "error": null,
+      "seconds": 9.31
+    }
+  ]
+}
