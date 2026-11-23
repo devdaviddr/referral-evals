@@ -61,7 +61,7 @@ python3 evaluate.py --compare results/dev-gemma4-e4b-v1.json results/dev-gemma4-
 
 ## How it works
 
-1. `classify.py` sends a letter and a prompt to the model and checks the JSON reply: a specialty, an urgency, a confidence and a reason. Replies with unknown labels are rejected, not guessed.
+1. `classify.py` sends a letter and a prompt to the model and checks the JSON reply: a specialty, an urgency, a confidence and a reason. A reply with an unknown label is rejected.
 2. `evaluate.py` runs a labelled set, scores it and saves every answer to `results/`, so runs can be compared later without the model.
 3. `bootstrap.py` resamples the letters 5,000 times to show how much of a difference between two runs could be chance.
 4. `labelcheck.py` has a second model label every letter blind, as a check on the answer key.
@@ -116,7 +116,7 @@ docs/                chart used in this README
 - Hundreds of urgent cases, so small differences become measurable.
 - The same eval on a large hosted model as a ceiling, and on other open models.
 - A better signal for when to ask a person, such as asking the model three times and flagging disagreements.
-- A check on the reason behind each label, not just the label.
+- A check on the reason the model gives for each label as well as the label itself.
 
 ## Licence
 
