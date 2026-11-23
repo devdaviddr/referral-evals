@@ -1,0 +1,608 @@
+{
+  "name": "test2-gemma4-12b-v3",
+  "model": "gemma4-12b",
+  "prompt": "v3",
+  "thinking": false,
+  "wall_seconds": 279.2,
+  "score": {
+    "n": 30,
+    "errors": 0,
+    "specialty_accuracy": 1.0,
+    "urgency_accuracy": 0.5,
+    "both_correct": 0.5,
+    "hard_both_correct": 0.444,
+    "urgency": {
+      "urgent": {
+        "precision": 0.8,
+        "recall": 0.308,
+        "support": 13
+      },
+      "semi-urgent": {
+        "precision": 0.222,
+        "recall": 0.8,
+        "support": 5
+      },
+      "routine": {
+        "precision": 1.0,
+        "recall": 0.583,
+        "support": 12
+      }
+    },
+    "specialty": {
+      "cardiology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 2
+      },
+      "orthopaedics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 21
+      },
+      "neurology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 2
+      },
+      "gastroenterology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 1
+      },
+      "dermatology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 2
+      },
+      "respiratory": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 2
+      }
+    },
+    "urgent_missed": 9,
+    "urgent_sent_to_routine": 0,
+    "triage_cost": 33,
+    "urgency_confusion": {
+      "routine -> routine": 7,
+      "routine -> semi-urgent": 5,
+      "semi-urgent -> semi-urgent": 4,
+      "semi-urgent -> urgent": 1,
+      "urgent -> semi-urgent": 9,
+      "urgent -> urgent": 4
+    },
+    "median_seconds": 9.29
+  },
+  "review_sweep": [
+    {
+      "bar": 0.0,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.5,
+      "urgent_missed_alone": 9
+    },
+    {
+      "bar": 0.5,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.5,
+      "urgent_missed_alone": 9
+    },
+    {
+      "bar": 0.6,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.5,
+      "urgent_missed_alone": 9
+    },
+    {
+      "bar": 0.7,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.5,
+      "urgent_missed_alone": 9
+    },
+    {
+      "bar": 0.8,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.5,
+      "urgent_missed_alone": 9
+    },
+    {
+      "bar": 0.85,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.5,
+      "urgent_missed_alone": 9
+    },
+    {
+      "bar": 0.9,
+      "handled_alone": 1.0,
+      "error_rate_when_alone": 0.5,
+      "urgent_missed_alone": 9
+    },
+    {
+      "bar": 0.95,
+      "handled_alone": 0.267,
+      "error_rate_when_alone": 0.375,
+      "urgent_missed_alone": 3
+    }
+  ],
+  "rows": [
+    {
+      "id": "test2-001",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Acute traumatic knee injury with significant functional impairment and visible deformity in a patient whose livelihood depends on mobility."
+      },
+      "error": null,
+      "seconds": 9.76
+    },
+    {
+      "id": "test2-002",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 1.0,
+        "reason": "Complete Achilles tendon tear causing significant functional impairment."
+      },
+      "error": null,
+      "seconds": 8.02
+    },
+    {
+      "id": "test2-003",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Acute traumatic injury with significant muscle bunching and functional weakness in an active worker."
+      },
+      "error": null,
+      "seconds": 9.19
+    },
+    {
+      "id": "test2-004",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Full-thickness rotator cuff tears with significant functional deficit in a working professional."
+      },
+      "error": null,
+      "seconds": 8.97
+    },
+    {
+      "id": "test2-005",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Significant knee dysfunction (limited range of motion) and a displaced bucket-handle meniscus tear requiring surgical assessment."
+      },
+      "error": null,
+      "seconds": 10.61
+    },
+    {
+      "id": "test2-006",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Significant midfoot injury with diastasis and bone fragment affecting weight-bearing in a manual worker."
+      },
+      "error": null,
+      "seconds": 9.8
+    },
+    {
+      "id": "test2-007",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "Displaced scaphoid fracture in a dominant hand of a working professional requires timely management to prevent long-term dysfunction."
+      },
+      "error": null,
+      "seconds": 10.67
+    },
+    {
+      "id": "test2-008",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Displaced fracture of the humerus causing functional disability (unable to lift arm)."
+      },
+      "error": null,
+      "seconds": 8.96
+    },
+    {
+      "id": "test2-009",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Suspected Stener lesion causing joint instability and dysfunction following an acute injury."
+      },
+      "error": null,
+      "seconds": 9.56
+    },
+    {
+      "id": "test2-010",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "Progressive symmetrical weakness and sensory loss with absent reflexes suggests a serious neurological condition requiring rapid assessment."
+      },
+      "error": null,
+      "seconds": 9.87
+    },
+    {
+      "id": "test2-011",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "Severe aortic stenosis with new symptoms of exertional breathlessness and near-syncope."
+      },
+      "error": null,
+      "seconds": 8.76
+    },
+    {
+      "id": "test2-012",
+      "hard": true,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "Rapidly growing nodule with history of BCCs suggests a potential skin malignancy."
+      },
+      "error": null,
+      "seconds": 9.02
+    },
+    {
+      "id": "test2-013",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Chronic shoulder pain with stable symptoms and no acute deterioration or significant functional loss."
+      },
+      "error": null,
+      "seconds": 9.58
+    },
+    {
+      "id": "test2-014",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Chronic heel pain causing significant functional limitation and failure of conservative management."
+      },
+      "error": null,
+      "seconds": 9.06
+    },
+    {
+      "id": "test2-015",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Chronic non-surgical rupture with minimal functional impairment and no acute deterioration."
+      },
+      "error": null,
+      "seconds": 9.29
+    },
+    {
+      "id": "test2-016",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "Request for hardware removal due to irritation after a healed fracture."
+      },
+      "error": null,
+      "seconds": 8.5
+    },
+    {
+      "id": "test2-017",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Meniscal tear causing persistent pain and functional limitation during exercise."
+      },
+      "error": null,
+      "seconds": 9.04
+    },
+    {
+      "id": "test2-018",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Chronic pain and functional impairment in a patient whose livelihood is affected despite multiple conservative treatments."
+      },
+      "error": null,
+      "seconds": 10.12
+    },
+    {
+      "id": "test2-019",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Chronic heel pain and plantar fascia thickening causing functional limitation in a runner."
+      },
+      "error": null,
+      "seconds": 8.49
+    },
+    {
+      "id": "test2-020",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Severe chronic shoulder pain with significant functional impairment (dressing/hair) and restricted range of motion."
+      },
+      "error": null,
+      "seconds": 9.88
+    },
+    {
+      "id": "test2-021",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Stable fracture with good progress and minimal pain; no acute deterioration."
+      },
+      "error": null,
+      "seconds": 9.01
+    },
+    {
+      "id": "test2-022",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Partial-thickness supraspinatus tear causing persistent pain and functional limitation in an active patient."
+      },
+      "error": null,
+      "seconds": 10.14
+    },
+    {
+      "id": "test2-023",
+      "hard": true,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Muscle tear causing significant functional impairment (limp) and bruising."
+      },
+      "error": null,
+      "seconds": 9.05
+    },
+    {
+      "id": "test2-024",
+      "hard": false,
+      "true": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Patient seeking specialist clearance for return to high-impact sports following a tendon rupture."
+      },
+      "error": null,
+      "seconds": 9.29
+    },
+    {
+      "id": "test2-025",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "urgent",
+        "confidence": 0.9,
+        "reason": "Bilateral hilar lymphadenopathy requires urgent investigation to rule out sarcoidosis or malignancy."
+      },
+      "error": null,
+      "seconds": 9.03
+    },
+    {
+      "id": "test2-026",
+      "hard": false,
+      "true": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Patient is seeking screening for Barrett's oesophagus with no current red flag symptoms."
+      },
+      "error": null,
+      "seconds": 9.58
+    },
+    {
+      "id": "test2-027",
+      "hard": false,
+      "true": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "pred": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "New exertional chest tightness in a patient with multiple cardiovascular risk factors."
+      },
+      "error": null,
+      "seconds": 8.21
+    },
+    {
+      "id": "test2-028",
+      "hard": false,
+      "true": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "Long-standing stable tremor with no acute neurological deterioration."
+      },
+      "error": null,
+      "seconds": 8.46
+    },
+    {
+      "id": "test2-029",
+      "hard": false,
+      "true": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "pred": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "Severe atopic dermatitis causing significant sleep disturbance and impact on work/quality of life."
+      },
+      "error": null,
+      "seconds": 9.3
+    },
+    {
+      "id": "test2-030",
+      "hard": false,
+      "true": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "pred": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "Incidental lung nodule in an ex-smoker with no red flags and stable size on follow-up."
+      },
+      "error": null,
+      "seconds": 9.91
+    }
+  ]
+}

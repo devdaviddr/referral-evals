@@ -4,7 +4,7 @@ A small LLM classifier that sorts GP referral letters by specialty and urgency, 
 
 Companion code for the article [Classifying referrals with an LLM, and testing whether it works](https://www.danielruffolo.net/posts/2026-11-22-classifying-referrals-with-an-llm-evals/).
 
-All 180 letters are synthetic. No real patient data is used.
+All 240 letters are synthetic. No real patient data is used.
 
 ## What it does
 
@@ -36,9 +36,11 @@ Settings: `LLM_BASE_URL` (default `http://127.0.0.1:11434/v1`), `LLM_MODEL` (def
 
 - `classify.py`: sends one letter to the model and checks the reply
 - `evaluate.py`: runs a labelled set, scores it and saves the run to `results/`
-- `prompts/`: the three prompt versions from the article
+- `prompts/`: the four prompt versions from the article, plus the label-check prompt
 - `data/dev.jsonl`: 120 letters for tuning
 - `data/test.jsonl`: 60 held-out letters, run once at the end
+- `data/dev2.jsonl`, `data/test2.jsonl`: 30 + 30 follow-up letters aimed at time-critical surgical cases and their look-alikes
+- `run_followup.sh`: the follow-up runs that test prompt v4
 - `bootstrap.py`: resamples the letters to show how much of a difference between runs could be chance
 - `labelcheck.py`: a second model (Qwen 3.5 9b) labels every letter blind, as a check on the answer key
 - `results/`: the runs behind the numbers in the article, including the label check and the review of each disagreement (`labelcheck-adjudication.json`)
