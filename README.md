@@ -26,6 +26,8 @@ Every number comes from a real run of Gemma 4 through Ollama on a 16 GB Mac mini
 
 Triage cost weights each urgency mistake by its harm (lower is better). Answering "routine" to every letter scores 348.
 
+To check any of these numbers without a model, run `python3 report.py`. It rebuilds every table in the article from the saved runs in `results/`.
+
 What the eval showed:
 
 - Defining the urgency categories in the prompt did the most, cutting missed urgent letters from 9 to 4.
@@ -92,6 +94,7 @@ classify.py          one letter in, labels out
 evaluate.py          score a labelled set, save and compare runs
 bootstrap.py         how much of a difference could be chance
 labelcheck.py        blind second-model check of the answer key
+report.py            rebuild the published tables from results/
 run_all.sh           every eval behind the article
 run_followup.sh      the v4 follow-up runs
 prompts/             v1 to v4, plus the label-check prompt

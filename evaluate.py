@@ -6,9 +6,9 @@
     python3 evaluate.py --compare results/dev-gemma4-e4b-v1.json results/dev-gemma4-12b-v4.json
 
 Each run is saved to results/<set>-<model>-<prompt>[-thinking].json so runs
-can be compared later without calling the model again. Use --workers 1 with
-Ollama: it serves one request at a time, so parallel workers only queue and
-inflate the per-letter timings.
+can be compared later without calling the model again. One worker is the
+default: Ollama serves one request at a time, so extra workers only queue
+and inflate the per-letter timings.
 """
 import argparse
 import json
@@ -120,7 +120,7 @@ def main():
     ap.add_argument("--prompt", default="v1")
     ap.add_argument("--set", default="dev")
     ap.add_argument("--thinking", action="store_true")
-    ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--workers", type=int, default=1)
     ap.add_argument("--limit", type=int)
     ap.add_argument("--compare", nargs="+")
     a = ap.parse_args()

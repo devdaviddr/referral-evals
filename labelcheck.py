@@ -1,9 +1,9 @@
 """Second-opinion check on the answer key.
 
-A different model family labels every letter blind (it never sees the
-key), with reasoning off (on, Qwen 3.5 ran past
-3,700 tokens per letter without answering). Then we count agreement and list disagreements
-for review.
+A model from a different family labels the 180 dev and test letters blind
+(it never sees the key). Then we count agreement and list disagreements
+for review. Reasoning is off: with it on, Qwen 3.5 9b ran past 3,700
+tokens per letter without answering.
 
     LLM_MODEL=qwen3.5:9b python3 labelcheck.py
 """
