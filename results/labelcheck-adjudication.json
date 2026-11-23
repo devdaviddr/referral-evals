@@ -1,0 +1,260 @@
+[
+  {
+    "id": "dev-006",
+    "verdict": "key_right",
+    "field": "specialty",
+    "why": "Progressive L5 foot drop from a compressive disc extrusion on MRI is a spinal surgical decision, so orthopaedics (spine) not neurology."
+  },
+  {
+    "id": "dev-009",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Ascending sensorimotor neuropathy over 6 weeks with weakness, areflexia and a fall is a progressive neurological deficit (possible CIDP/GBS spectrum): urgent."
+  },
+  {
+    "id": "dev-015",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Suspected new Parkinson's with no falls and coping day to day; semi-urgent for diagnosis is defensible but routine is a reasonable reading of minimal dysfunction."
+  },
+  {
+    "id": "dev-025",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Asymptomatic, fully active moderate AS with normal LVEF is often routine surveillance, though progression towards severe makes semi-urgent defensible."
+  },
+  {
+    "id": "dev-029",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "New exertional chest heaviness relieved by rest is new angina and is urgent regardless of the BP/lipid framing."
+  },
+  {
+    "id": "dev-039",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Widespread suspected bullous pemphigoid with eroded blisters in a frail 84-year-old can deteriorate quickly; routine is clearly wrong."
+  },
+  {
+    "id": "dev-042",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Lofgren-type sarcoidosis with settled symptoms and normal lung and eye tests has a good prognosis; routine is as defensible as semi-urgent."
+  },
+  {
+    "id": "dev-043",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Severe eczema (EASI 24) failing wet wraps, with recurrent impetigo and major sleep and study impact, is at least semi-urgent."
+  },
+  {
+    "id": "dev-044",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Acne already scarring after failed antibiotics needs timely isotretinoin to prevent permanent scarring; semi-urgent."
+  },
+  {
+    "id": "dev-047",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "22 mm spiculated nodule in a 40 pack-year ex-smoker is suspected lung cancer: urgent."
+  },
+  {
+    "id": "dev-048",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "HBeAg-negative hepatitis B with ALT now over twice normal and HBV DNA above 2,000 meets treatment criteria; semi-urgent, not a 12-month wait."
+  },
+  {
+    "id": "dev-054",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Weekly symptomatic paroxysmal AF despite rate control, but anticoagulated and stable; semi-urgent or routine are both reasonable."
+  },
+  {
+    "id": "dev-055",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Moderate psoriasis (PASI 14) failing topicals with phototherapy impractical and joint symptoms needs systemic-therapy assessment within months."
+  },
+  {
+    "id": "dev-060",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Exertional breathlessness with raised NT-proBNP, diastolic dysfunction and moderate MR is probable new heart failure; at least semi-urgent, never routine."
+  },
+  {
+    "id": "dev-065",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Chronic urticaria uncontrolled on fourfold antihistamine with lip angioedema and sleep loss is semi-urgent for omalizumab."
+  },
+  {
+    "id": "dev-070",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Chronic migraine after three failed preventives with work loss; semi-urgent is defensible but a normal exam and long-standing course make routine reasonable."
+  },
+  {
+    "id": "dev-077",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Chronic cough in a never-smoker with normal CXR and spirometry and no red flags; routine is a reasonable reading, semi-urgent also defensible."
+  },
+  {
+    "id": "dev-078",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Rapidly enlarging suspected SCC in an immunosuppressed transplant recipient is a suspected cancer with high-risk features: urgent."
+  },
+  {
+    "id": "dev-084",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Probable OSA with ESS 14 but no driving risk; prioritisation varies, and semi-urgent and routine are both reasonable."
+  },
+  {
+    "id": "dev-093",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Strongly positive coeliac serology with iron deficiency, kept on gluten pending biopsy, should not wait 12 months; semi-urgent."
+  },
+  {
+    "id": "dev-097",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "MASLD with FIB-4 2.9 and borderline platelets and spleen raises possible advanced fibrosis; semi-urgent is defensible but compensated disease could be routine."
+  },
+  {
+    "id": "dev-107",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Acute traumatic massive cuff tear in a 52-year-old manual worker needs early repair decision; urgent, like other acute tendon ruptures."
+  },
+  {
+    "id": "dev-109",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Rapidly progressive fibrotic ILD with exertional desaturation to 88% over 2 months can deteriorate quickly: urgent."
+  },
+  {
+    "id": "dev-112",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Resistant hypertension at 168/102 on three agents with LVH and albuminuria is end-organ damage needing work-up within months."
+  },
+  {
+    "id": "dev-113",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Stable angina still symptomatic weekly on two anti-anginals with a prior stent needs review within months; semi-urgent fits better than routine."
+  },
+  {
+    "id": "dev-119",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "PPI-refractory reflux without alarm features is often category 3 in Australian prioritisation criteria; semi-urgent is arguable, routine possibly better."
+  },
+  {
+    "id": "test-001",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "New probable HCM (19 mm septum, deep T wave inversion) in a young man needs risk stratification for sudden death within months; not routine."
+  },
+  {
+    "id": "test-007",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Painful erosive oral lichen planus limiting eating and failing topical therapy is semi-urgent."
+  },
+  {
+    "id": "test-010",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Refractory H. pylori with mild dyspepsia and no alarm features; routine is a reasonable reading, semi-urgent also defensible."
+  },
+  {
+    "id": "test-011",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Acute complete Achilles rupture with an 18 mm gap needs a time-critical operative decision: urgent."
+  },
+  {
+    "id": "test-018",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Suspected occupational asthma with ongoing exposure needs confirmation within months because outcome worsens with continued exposure and job decisions depend on it."
+  },
+  {
+    "id": "test-019",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Reflux-related cough already improving on PPI with no alarm features; routine is at least as reasonable as semi-urgent."
+  },
+  {
+    "id": "test-021",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Progressive dysphagia with 6 kg weight loss in a 58-year-old smoker is suspected oesophageal cancer: urgent despite 'no rush'."
+  },
+  {
+    "id": "test-024",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Nocturnal watery diarrhoea 5-6 times a day restricting activity is disabling; semi-urgent for colonoscopy with biopsies."
+  },
+  {
+    "id": "test-025",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Suspected hypersensitivity pneumonitis with reduced gas transfer and ongoing antigen exposure risks progression to fibrosis; semi-urgent."
+  },
+  {
+    "id": "test-026",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "New moderate COPD already improving on tiotropium; GP-manageable so routine is reasonable, semi-urgent also defensible."
+  },
+  {
+    "id": "test-039",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Third pericarditis recurrence now settled on colchicine; semi-urgent for planning before tapering is defensible, routine also reasonable."
+  },
+  {
+    "id": "test-041",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Iron deficiency anaemia (Hb 92, ferritin 6) in a 78-year-old needs urgent bidirectional endoscopy to exclude GI cancer."
+  },
+  {
+    "id": "test-043",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Anthracycline-related LVEF fall to 48% is new cardiomyopathy needing specialist management within months; arguably urgent, never routine."
+  },
+  {
+    "id": "test-046",
+    "verdict": "ambiguous",
+    "field": "urgency",
+    "why": "Alopecia areata at 30% is not dangerous; semi-urgent given spread and distress is defensible, routine also reasonable."
+  },
+  {
+    "id": "test-053",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Cluster headache in an active bout needs prevention now; a routine wait would outlast the bout."
+  },
+  {
+    "id": "test-054",
+    "verdict": "key_right",
+    "field": "urgency",
+    "why": "Severe fissured hand dermatitis failing treatment and causing time off work as a nurse is semi-urgent."
+  },
+  {
+    "id": "test-059",
+    "verdict": "key_right",
+    "field": "both",
+    "why": "NCS-confirmed moderate carpal tunnel failing splinting with grip weakness is a semi-urgent hand-surgery (orthopaedics) referral, not neurology."
+  }
+]

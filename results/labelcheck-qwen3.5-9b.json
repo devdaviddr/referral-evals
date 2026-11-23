@@ -1,0 +1,2751 @@
+{
+  "summary": {
+    "labelled": 179,
+    "of": 180,
+    "specialty_agree": 177,
+    "urgency_agree": 137,
+    "both_agree": 136,
+    "disagreements": [
+      "dev-006",
+      "dev-009",
+      "dev-015",
+      "dev-025",
+      "dev-029",
+      "dev-039",
+      "dev-042",
+      "dev-043",
+      "dev-044",
+      "dev-047",
+      "dev-048",
+      "dev-054",
+      "dev-055",
+      "dev-060",
+      "dev-065",
+      "dev-070",
+      "dev-077",
+      "dev-078",
+      "dev-084",
+      "dev-093",
+      "dev-097",
+      "dev-107",
+      "dev-109",
+      "dev-112",
+      "dev-113",
+      "dev-119",
+      "test-001",
+      "test-007",
+      "test-010",
+      "test-011",
+      "test-018",
+      "test-019",
+      "test-021",
+      "test-024",
+      "test-025",
+      "test-026",
+      "test-039",
+      "test-041",
+      "test-043",
+      "test-046",
+      "test-053",
+      "test-054",
+      "test-059"
+    ]
+  },
+  "rows": [
+    {
+      "id": "dev-001",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is stable with mild COPD and no recent exacerbations or significant functional decline."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "dev-002",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with stable LDL levels and the request concerns long-term medication management rather than acute deterioration."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "dev-003",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The referral is for pre-conception planning and medication review in a stable patient with no acute deterioration risk."
+      },
+      "seconds": 5.1
+    },
+    {
+      "id": "dev-004",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has quiescent disease with normal bowel habits and no bleeding, requiring only ongoing surveillance."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "dev-005",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has frequent exacerbations requiring antibiotics and Pseudomonas infection but is stable between episodes with minimal breathlessness."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-006",
+      "hard": true,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "The patient has developed acute foot drop with significant motor weakness (ankle dorsiflexion 2/5) and sensory loss over the last 10 days due to a large disc extrusion compressing the L5 nerve root."
+      },
+      "seconds": 7.4
+    },
+    {
+      "id": "dev-007",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The patient presents with exertional chest tightness suggestive of angina and has significant cardiovascular risk factors (smoking, diabetes, hypertension), requiring prompt assessment to rule out acute coronary syndrome or unstable angina."
+      },
+      "seconds": 7.0
+    },
+    {
+      "id": "dev-008",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient is asymptomatic with stable mild-to-moderate mitral regurgitation and controlled hypertension, requiring only surveillance rather than urgent intervention."
+      },
+      "seconds": 6.2
+    },
+    {
+      "id": "dev-009",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has progressive neurological symptoms (numbness ascending to knees, unsteady walking, fall) but is currently stable with no immediate life-threatening airway or breathing issues."
+      },
+      "seconds": 6.7
+    },
+    {
+      "id": "dev-010",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with normal lung function tests and the referral seeks advice on genetic testing for her children rather than acute management."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-011",
+      "hard": true,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The patient presents with black stools (melena) and a significant drop in hemoglobin indicating active gastrointestinal bleeding."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-012",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "The patient experienced a first witnessed generalized tonic-clonic seizure with tongue biting and post-ictal confusion, requiring immediate investigation (EEG/MRI) to rule out underlying pathology."
+      },
+      "seconds": 6.6
+    },
+    {
+      "id": "dev-013",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The patient has progressive dysphagia to solids and liquids (specifically bread/rice now included) with significant weight loss, indicating a high risk of obstruction or malignancy requiring prompt investigation."
+      },
+      "seconds": 6.6
+    },
+    {
+      "id": "dev-014",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable symptoms with no signs of acute deterioration or severe sleep apnea requiring immediate intervention."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "dev-015",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is managing day to day with no falls or cognitive decline, indicating a stable condition suitable for standard outpatient assessment."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-016",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The condition is described as mild and stable with no signs of rapid deterioration or severe dysfunction."
+      },
+      "seconds": 5.4
+    },
+    {
+      "id": "dev-017",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable mild osteoarthritis with no acute deterioration or functional loss requiring immediate intervention."
+      },
+      "seconds": 5.4
+    },
+    {
+      "id": "dev-018",
+      "hard": true,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has persistent nocturnal pain and partial response to medication indicating ongoing dysfunction without signs of rapid deterioration or emergency."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "dev-019",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with a normal CXR and stable condition, indicating no risk of rapid deterioration."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "dev-020",
+      "hard": true,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has chronic shoulder pain managed conservatively without signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.3
+    },
+    {
+      "id": "dev-021",
+      "hard": true,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The presence of a rapidly widening brown-black streak in the thumbnail extending onto the cuticle is highly suspicious for subungual melanoma, which requires urgent assessment."
+      },
+      "seconds": 6.4
+    },
+    {
+      "id": "dev-022",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with normal investigations and requires only ongoing screening advice."
+      },
+      "seconds": 5.3
+    },
+    {
+      "id": "dev-023",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with stable mild aortic regurgitation and the referral is for pre-conception planning rather than acute management."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "dev-024",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The condition is a painless ganglion cyst with full function and no risk of rapid deterioration."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "dev-025",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with preserved ejection fraction and stable functional status despite echocardiographic progression."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-026",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is entirely asymptomatic with a structurally normal heart and no signs of rapid deterioration."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "dev-027",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable chronic headaches with a normal neurological exam and no signs of rapid deterioration."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "dev-028",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with normal hemoglobin and requires scheduled surveillance colonoscopy per guidelines rather than acute intervention."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "dev-029",
+      "hard": true,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient reports recurrent chest heaviness (angina) triggered by exertion and relieved by rest, indicating unstable or worsening symptoms that require assessment within the standard timeframe but not immediately as an emergency."
+      },
+      "seconds": 7.2
+    },
+    {
+      "id": "dev-030",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient's symptoms are improving and investigations are normal, indicating a need for routine review rather than urgent assessment."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "dev-031",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has significant functional impairment (struggles with ladders/kneeling) and work absence due to chronic pain from osteoarthritis, but there are no signs of acute deterioration or emergency."
+      },
+      "seconds": 7.0
+    },
+    {
+      "id": "dev-032",
+      "hard": true,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has normal ECGs and a negative stress echo with good exercise capacity, indicating no acute cardiac pathology despite her anxiety about family history."
+      },
+      "seconds": 6.4
+    },
+    {
+      "id": "dev-033",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has recurrent symptomatic palpitations causing functional impairment and anxiety but no syncope or signs of rapid deterioration."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-034",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "progressive weakness and wasting with brisk reflexes and upgoing plantar indicating possible upper motor neuron involvement requiring prompt investigation."
+      },
+      "seconds": 5.4
+    },
+    {
+      "id": "dev-035",
+      "hard": true,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The lesion has been stable since birth with no change in size or shape and shows benign dermoscopic features, making the patient's anxiety due to social media rather than a clinical emergency."
+      },
+      "seconds": 6.8
+    },
+    {
+      "id": "dev-036",
+      "hard": true,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The worsening tremor causing functional impairment (spilling tea, inability to write) and embarrassment indicates dysfunction/disability but lacks signs of rapid deterioration or emergency."
+      },
+      "seconds": 6.7
+    },
+    {
+      "id": "dev-037",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with a stable murmur and no risk factors for rapid deterioration."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "dev-038",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The presence of hemoptysis (coughing up blood) combined with weight loss and a change in chronic cough indicates potential malignancy or severe infection requiring immediate investigation."
+      },
+      "seconds": 6.3
+    },
+    {
+      "id": "dev-039",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is afebrile, eating and drinking well, with no signs of rapid deterioration or systemic instability despite the blistering rash."
+      },
+      "seconds": 6.2
+    },
+    {
+      "id": "dev-040",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has severe osteoarthritis with significant functional impairment (limited walking distance, difficulty on stairs) and failed conservative management, fitting the semi-urgent category for pain/dysfunction unlikely to deteriorate quickly."
+      },
+      "seconds": 7.3
+    },
+    {
+      "id": "dev-041",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "The patient presents with acute decompensated heart failure symptoms (severe breathlessness, orthopnea, significant weight gain) and elevated NT-proBNP requiring urgent specialist assessment."
+      },
+      "seconds": 6.7
+    },
+    {
+      "id": "dev-042",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is stable with settled symptoms and no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "dev-043",
+      "hard": true,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The letter describes chronic eczema that is difficult to control but does not indicate rapid deterioration or an emergency situation."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "dev-044",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The condition is chronic inflammatory acne with scarring that has failed previous treatments but does not present as an acute emergency or rapid deterioration."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-045",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable residual symptoms from a resolved Bell's palsy with no acute deterioration or emergency features."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "dev-046",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has confirmed inflammatory bowel disease symptoms (elevated calprotectin/CRP) but is currently stable with no signs of acute deterioration or emergency."
+      },
+      "seconds": 6.3
+    },
+    {
+      "id": "dev-047",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "The patient has a stable cough with no haemoptysis or weight loss, indicating the condition is unlikely to deteriorate quickly despite the concerning nodule."
+      },
+      "seconds": 6.5
+    },
+    {
+      "id": "dev-048",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable chronic hepatitis B with a recent rise in ALT and HBV DNA indicating the need for antiviral therapy assessment, which is not an emergency but requires standard specialist review."
+      },
+      "seconds": 6.8
+    },
+    {
+      "id": "dev-049",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable symptoms with normal examination and investigations, presenting primarily for reassurance regarding motor neurone disease rather than acute deterioration."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "dev-050",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has significant functional impairment (reduced work hours) and failed conservative management with two injections, warranting a surgical opinion within the standard timeframe but not an emergency."
+      },
+      "seconds": 6.5
+    },
+    {
+      "id": "dev-051",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "The presence of a suspected primary bone tumour with night pain and periosteal reaction indicates potential rapid deterioration requiring immediate assessment."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "dev-052",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 1.0,
+        "reason": "The patient has poorly controlled asthma requiring escalation to biologic therapy but is stable enough for a standard outpatient assessment within the typical timeframe."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-053",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has mild memory concerns with preserved function and normal screening tests (MoCA), indicating a need for reassurance rather than acute intervention."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "dev-054",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is stable on anticoagulation and rate control with symptoms affecting work but no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-055",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The letter describes a chronic condition with significant impact on quality of life but no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-056",
+      "hard": true,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is normotensive with a stable mild dilation and no connective tissue features or family history, making this an elective surveillance case despite the GP's request for urgency driven by patient anxiety."
+      },
+      "seconds": 7.0
+    },
+    {
+      "id": "dev-057",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The patient presents with significant weight loss and a new pleural effusion in the context of asbestos exposure, raising high suspicion for malignancy which requires prompt investigation."
+      },
+      "seconds": 6.2
+    },
+    {
+      "id": "dev-058",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has chronic symptoms with normal investigations and no red flags like weight loss or bleeding, indicating a stable condition suitable for routine review."
+      },
+      "seconds": 6.2
+    },
+    {
+      "id": "dev-059",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The condition is a stable keloid with minimal symptoms (itching) and no risk of rapid deterioration."
+      },
+      "seconds": 5.3
+    },
+    {
+      "id": "dev-060",
+      "hard": true,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient's symptoms have been stable over the last two months and there is no indication of rapid deterioration."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "dev-061",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": null,
+      "seconds": 4.2
+    },
+    {
+      "id": "dev-062",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The condition is described as developing slowly over three years with no pain and minimal functional limitation."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "dev-063",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with a low calculated five-year CVD risk (6%) and normal ECG, indicating the referral is for preventive advice rather than acute management."
+      },
+      "seconds": 6.7
+    },
+    {
+      "id": "dev-064",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable hemoglobin levels and the condition is described as intermittent with no signs of rapid deterioration or emergency."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-065",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The condition is chronic spontaneous urticaria with no signs of rapid deterioration or airway compromise."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "dev-066",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The letter describes a stable skin condition with no suspicious lesions found and requests baseline photography for long-term surveillance rather than immediate intervention."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "dev-067",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The condition is mild and stable with no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.2
+    },
+    {
+      "id": "dev-068",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The letter explicitly states concern for an 'impending pathological fracture' and notes the patient is using a walking stick due to pain."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "dev-069",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient's symptoms have improved significantly and the neurological exam is normal, indicating a stable condition suitable for routine assessment within 12 months."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "dev-070",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient has stable chronic migraine with normal imaging and exam findings, requiring a non-emergent review for advanced therapy options."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "dev-071",
+      "hard": true,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has chronic headaches with a normal examination and no red flags suggesting rapid deterioration."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "dev-072",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable ventricular ectopics with normal echo and no symptoms of deterioration or hemodynamic compromise."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "dev-073",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with a small incidental nodule where guidelines suggest no follow-up is needed, indicating minimal risk and dysfunction."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-074",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The condition is stable with no rapid deterioration or acute symptoms."
+      },
+      "seconds": 5.0
+    },
+    {
+      "id": "dev-075",
+      "hard": true,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient has a stable rash that is not deteriorating quickly and does not require emergency assessment."
+      },
+      "seconds": 5.1
+    },
+    {
+      "id": "dev-076",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has persistent mechanical symptoms (locking/catching) and failed physiotherapy after three months of injury without rapid deterioration."
+      },
+      "seconds": 6.2
+    },
+    {
+      "id": "dev-077",
+      "hard": true,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has a chronic dry cough with normal imaging and spirometry that did not respond to inhaled corticosteroids, indicating no acute deterioration or emergency."
+      },
+      "seconds": 6.4
+    },
+    {
+      "id": "dev-078",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The lesion is described as growing quickly but the patient has no palpable nodes and there are no signs of rapid systemic deterioration or emergency."
+      },
+      "seconds": 6.3
+    },
+    {
+      "id": "dev-079",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable non-alcoholic fatty liver disease with normal labs and is already on a weight-loss program without acute symptoms."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "dev-080",
+      "hard": true,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has chronic mechanical back pain with a normal neurological exam and no red flags for deterioration."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "dev-081",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient has stable mild symptoms with no red flags or risk of rapid deterioration."
+      },
+      "seconds": 5.3
+    },
+    {
+      "id": "dev-082",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has significant functional impairment (difficulty dressing/hair care) and pain that is not improving with conservative management like injections and physio."
+      },
+      "seconds": 6.4
+    },
+    {
+      "id": "dev-083",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is stable with controlled symptoms and requires scheduled surveillance endoscopy rather than acute intervention."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "dev-084",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable hypertension with no acute respiratory distress or rapid deterioration risk."
+      },
+      "seconds": 4.7
+    },
+    {
+      "id": "dev-085",
+      "hard": true,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has intermittent abdominal pain with normal bloods and no signs of acute deterioration or emergency."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "dev-086",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has significant neuropathic symptoms causing sleep disturbance but stable vital signs and no rapid deterioration."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-087",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient has stable chronic rosacea with minimal symptoms and no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "dev-088",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The tremor is chronic (10 years), stable without interference in daily activities, and the patient explicitly requests only diagnostic confirmation rather than urgent treatment."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "dev-089",
+      "hard": true,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable palpitations with a normal ECG and no signs of acute deterioration or high-risk features."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "dev-090",
+      "hard": true,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The patient experienced a new episode of numbness and clumsiness (TIA-like symptoms) which requires urgent assessment to rule out stroke or other acute neurological conditions."
+      },
+      "seconds": 6.5
+    },
+    {
+      "id": "dev-091",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has a stable knee with no recent instability or functional limitation, and the request is for elective advice regarding reconstruction before returning to low-impact social football."
+      },
+      "seconds": 6.3
+    },
+    {
+      "id": "dev-092",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The patient has iron deficiency anaemia with significant unintentional weight loss and fatigue, which are red flags requiring prompt investigation to rule out malignancy."
+      },
+      "seconds": 6.5
+    },
+    {
+      "id": "dev-093",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable weight and no signs of acute deterioration or severe complications like bleeding or dysphagia."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-094",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The condition involves benign skin tags causing minor mechanical irritation without signs of rapid deterioration or malignancy."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "dev-095",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The lesion is a basal cell carcinoma on the nasal ala requiring specialist management (possibly Mohs surgery), which fits semi-urgent criteria for dysfunction/disability unlikely to deteriorate quickly."
+      },
+      "seconds": 6.8
+    },
+    {
+      "id": "dev-096",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has mild symptoms with no pain during the day and is happy to wait for a surgical opinion."
+      },
+      "seconds": 5.4
+    },
+    {
+      "id": "dev-097",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable metabolic dysfunction-associated steatotic liver disease with no signs of acute deterioration or emergency."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "dev-098",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The symptoms are described as mild and stable with no indication of rapid deterioration or emergency."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "dev-099",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has a fully healed fracture with stable hardware and only mild irritation from clothing, indicating no risk of rapid deterioration."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-100",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.9,
+        "reason": "The patient has recurrent focal seizures indicating a change in condition stability requiring assessment within the standard timeframe but not an immediate emergency."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-101",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient's asthma is well-controlled with normal spirometry and no recent exacerbations; the referral is solely for a fitness-to-work letter."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-102",
+      "hard": true,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has recurrent patellar dislocations causing functional disability (avoiding stairs) and failed conservative management with physiotherapy."
+      },
+      "seconds": 6.3
+    },
+    {
+      "id": "dev-103",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has worsening breathlessness and multiple exacerbations but is stable without admission needs."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "dev-104",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The condition consists of stable seborrhoeic keratoses with no signs of rapid change or deterioration."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "dev-105",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "Painless jaundice with dilated ducts suggests a biliary obstruction requiring prompt investigation to rule out malignancy."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "dev-106",
+      "hard": true,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has a normal neurological examination and stable headaches with no signs of acute deterioration or emergency."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-107",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has a full-thickness rotator cuff tear with retraction and significant functional disability (cannot lift arm) but no neurovascular deficit or signs of rapid deterioration."
+      },
+      "seconds": 6.5
+    },
+    {
+      "id": "dev-108",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "The patient is a young athlete with syncope and an abnormal ECG (prolonged QTc) following collapse during exercise."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-109",
+      "hard": true,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has progressive dyspnea and hypoxia on exertion with clubbing and reticular shadowing suggesting interstitial lung disease or fibrosis, which requires investigation within the standard timeframe but does not meet criteria for immediate deterioration."
+      },
+      "seconds": 7.7
+    },
+    {
+      "id": "dev-110",
+      "hard": true,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.9,
+        "reason": "The patient has stable asthma symptoms managed by a reliever inhaler with no signs of acute deterioration or respiratory failure."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "dev-111",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient is stable with no recurrence of pneumothorax and the referral is for pre-activity risk assessment rather than acute management."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-112",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable renal function with no acute symptoms like chest pain or neurological deficits, indicating a need for standard work-up rather than urgent intervention."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "dev-113",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable angina with predictable symptoms relieved by GTN and no signs of acute deterioration or rest pain."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-114",
+      "hard": true,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable mild liver enzyme elevation and the referral is for a non-urgent assessment of fibrosis to determine medication safety."
+      },
+      "seconds": 6.4
+    },
+    {
+      "id": "dev-115",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has recurrent painful nodules and abscesses causing work absenteeism but is not described as having signs of rapid deterioration or sepsis."
+      },
+      "seconds": 6.5
+    },
+    {
+      "id": "dev-116",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has significant pain and weight loss but a normal neurological exam with no rapid deterioration signs."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "dev-117",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The lesion exhibits multiple high-risk features including recent growth, asymmetry, irregular borders, color variation, and bleeding after scratching."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "dev-118",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient has stable symptoms with no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.1
+    },
+    {
+      "id": "dev-119",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable symptoms without alarm features like dysphagia or weight loss and is requesting a standard diagnostic investigation (gastroscopy) for management advice."
+      },
+      "seconds": 6.5
+    },
+    {
+      "id": "dev-120",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The letter describes a screening colonoscopy for an asymptomatic patient with family history, which is not urgent or semi-urgent."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "test-001",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has mild symptoms only on heavy exertion with no signs of rapid deterioration such as chest pain or syncope."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "test-002",
+      "hard": true,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has progressive neurological symptoms including unsteadiness, falls, and gait disturbance over several months without acute deterioration or emergency features."
+      },
+      "seconds": 6.3
+    },
+    {
+      "id": "test-003",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with stable liver function tests and the request concerns long-term management advice rather than acute deterioration."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "test-004",
+      "hard": true,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "The presence of hemoptysis (blood-streaked sputum) and significant weight loss in a patient with COPD indicates potential serious pathology requiring prompt investigation."
+      },
+      "seconds": 6.4
+    },
+    {
+      "id": "test-005",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with stable risk factors and the GP has already initiated treatment, indicating no need for urgent assessment."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "test-006",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has significant functional impairment (difficulty driving) and pain over a chronic course without signs of rapid deterioration or emergency."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "test-007",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The condition is chronic with stable weight and partial response to topical treatment, indicating no risk of rapid deterioration."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "test-008",
+      "hard": true,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has a normal ECG and the symptoms are intermittent without signs of acute deterioration."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "test-009",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has a well-controlled chronic condition with no signs of acute deterioration or emergency."
+      },
+      "seconds": 5.4
+    },
+    {
+      "id": "test-010",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable symptoms without alarm features like weight loss or anaemia, and the request is for a diagnostic procedure to manage chronic infection."
+      },
+      "seconds": 6.3
+    },
+    {
+      "id": "test-011",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has a confirmed Achilles tendon rupture causing significant dysfunction (unable to push off) but is stable and currently managed with a boot, fitting the semi-urgent category for pain or disability unlikely to deteriorate quickly."
+      },
+      "seconds": 7.2
+    },
+    {
+      "id": "test-012",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient's condition is stable with no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.4
+    },
+    {
+      "id": "test-013",
+      "hard": true,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The nodule is stable over two years and the patient is asymptomatic; urgency stems only from anxiety rather than clinical deterioration."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "test-014",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic and the referral seeks confirmation of diagnosis and genetic testing rather than acute management."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "test-015",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient is asymptomatic with normal spirometry and no active lung pathology requiring immediate intervention."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "test-016",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient is asymptomatic with normalised markers and the request concerns long-term follow-up advice rather than acute deterioration."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "test-017",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The condition is chronic and stable with significant improvement from conservative management (shoe modifications), indicating no risk of rapid deterioration."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "test-018",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable occupational asthma with partial response to treatment and no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "test-019",
+      "hard": true,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable symptoms with partial response to treatment and no red flag signs like weight loss or dysphagia."
+      },
+      "seconds": 6.2
+    },
+    {
+      "id": "test-020",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has chronic lateral epicondylitis with significant improvement and no work absence, indicating minimal dysfunction unlikely to deteriorate quickly."
+      },
+      "seconds": 6.1
+    },
+    {
+      "id": "test-021",
+      "hard": true,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has progressive dysphagia with significant weight loss and failure of acid suppression therapy, indicating a need for investigation within the semi-urgent timeframe despite the GP's casual opening remark."
+      },
+      "seconds": 6.7
+    },
+    {
+      "id": "test-022",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The condition is described as painless and stable with no risk of rapid deterioration."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "test-023",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has persistent shoulder pain and dysfunction despite physiotherapy and an injection that provided only temporary relief, indicating a need for assessment within the standard timeframe rather than immediately or over a year."
+      },
+      "seconds": 7.1
+    },
+    {
+      "id": "test-024",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has chronic symptoms without signs of rapid deterioration or severe complications like bleeding."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "test-025",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable oxygen saturation and mild symptoms without signs of acute deterioration or respiratory failure."
+      },
+      "seconds": 5.4
+    },
+    {
+      "id": "test-026",
+      "hard": true,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable chronic obstructive pulmonary disease (COPD) with gradual onset of symptoms and no signs of acute deterioration or red flags like haemoptysis."
+      },
+      "seconds": 6.8
+    },
+    {
+      "id": "test-027",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable long-standing constipation with normal investigations and no red flags like weight loss or bleeding."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "test-028",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is stable with no acute deterioration or emergency symptoms, and the request is for a routine medication review."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "test-029",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The patient presents with syncope (nearly blacked out) and breathlessness on minimal exertion in the context of a new harsh ejection systolic murmur suggestive of severe aortic stenosis."
+      },
+      "seconds": 6.9
+    },
+    {
+      "id": "test-030",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The lesion is a stable cyst with minimal symptoms (mechanical irritation only) and no signs of acute infection or rapid deterioration."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "test-031",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient's symptoms are mild and unrelated to exertion with stable baseline findings, indicating no risk of rapid deterioration."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "test-032",
+      "hard": true,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The presence of bilateral upgoing plantars, brisk reflexes, sensory level, and bladder dysfunction indicates cauda equina or spinal cord compression requiring immediate assessment."
+      },
+      "seconds": 6.5
+    },
+    {
+      "id": "test-033",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has stable exercise-induced symptoms with normal resting spirometry and no risk of rapid deterioration."
+      },
+      "seconds": 5.6
+    },
+    {
+      "id": "test-034",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "The lesion is a rapidly growing (6 weeks), bleeding nodule on the scalp of an immunocompromised-appearing patient with a history of skin cancers, raising high suspicion for aggressive malignancy like amelanotic melanoma or SCC."
+      },
+      "seconds": 7.4
+    },
+    {
+      "id": "test-035",
+      "hard": true,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The patient presents with signs of acute heart failure (orthopnea, paroxysmal nocturnal dyspnea, peripheral edema) and significantly elevated NT-proBNP."
+      },
+      "seconds": 6.6
+    },
+    {
+      "id": "test-036",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient has stable chronic symptoms with full range of motion and strength, indicating no risk of rapid deterioration."
+      },
+      "seconds": 5.7
+    },
+    {
+      "id": "test-037",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient has stable solar lentigines causing cosmetic concern without signs of rapid deterioration or malignancy."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "test-038",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient's condition is stable with no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.4
+    },
+    {
+      "id": "test-039",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient's pain has resolved and inflammatory markers are normal, indicating a stable condition suitable for outpatient review within the standard timeframe."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "test-040",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "The presence of ptosis worsening with fatigue (positive ice pack test), diplopia, and bulbar weakness suggests Myasthenia Gravis, a condition that can rapidly progress to respiratory failure."
+      },
+      "seconds": 6.9
+    },
+    {
+      "id": "test-041",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is stable with no acute symptoms or signs of rapid deterioration (e.g., active bleeding), making the investigation for iron deficiency anaemia a routine referral."
+      },
+      "seconds": 6.3
+    },
+    {
+      "id": "test-042",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent",
+        "confidence": 0.95,
+        "reason": "The patient has significant functional disability (stopped golf and walking >200m) due to spinal stenosis but shows no signs of rapid deterioration or cauda equina syndrome."
+      },
+      "seconds": 6.8
+    },
+    {
+      "id": "test-043",
+      "hard": false,
+      "key": {
+        "specialty": "cardiology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "cardiology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with stable vital signs and the referral is for ongoing management of cardiomyopathy rather than an acute deterioration."
+      },
+      "seconds": 6.2
+    },
+    {
+      "id": "test-044",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The condition is chronic and stable with no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.2
+    },
+    {
+      "id": "test-045",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The symptoms are stable and bearable with no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.3
+    },
+    {
+      "id": "test-046",
+      "hard": true,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The clinical presentation of alopecia areata is stable and non-life-threatening; the GP's request for 'urgent' review due to patient distress regarding social impact does not meet the criteria for urgent or semi-urgent medical deterioration."
+      },
+      "seconds": 7.2
+    },
+    {
+      "id": "test-047",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has a normal spirometry test and no current symptoms or medication use."
+      },
+      "seconds": 5.4
+    },
+    {
+      "id": "test-048",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "urgent",
+        "confidence": 1.0,
+        "reason": "The nodule has grown significantly in size with new lobulated margins on a short-interval follow-up CT scan."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "test-049",
+      "hard": true,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The presence of a lytic bone lesion in the humerus with significant weight loss and night pain raises high suspicion for metastatic disease from his history of prostate cancer."
+      },
+      "seconds": 6.4
+    },
+    {
+      "id": "test-050",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient has asymptomatic cherry angiomas with normal blood tests and seeks reassurance rather than treatment for an acute condition."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "test-051",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with normal liver enzymes and a suspected benign condition (Gilbert's syndrome) requiring only confirmation."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "test-052",
+      "hard": true,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "urgent",
+        "confidence": 0.95,
+        "reason": "The lesion exhibits multiple high-risk features (asymmetry, irregular border, color variation) and has recently changed in size and darkness, indicating a potential melanoma requiring prompt assessment."
+      },
+      "seconds": 6.7
+    },
+    {
+      "id": "test-053",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has a known episodic condition with stable baseline investigations and the request is for preventive management rather than acute intervention."
+      },
+      "seconds": 6.0
+    },
+    {
+      "id": "test-054",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The condition is chronic hand dermatitis with fissuring and vesicles that has failed conservative management but shows no signs of rapid deterioration or emergency."
+      },
+      "seconds": 6.2
+    },
+    {
+      "id": "test-055",
+      "hard": false,
+      "key": {
+        "specialty": "respiratory",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "respiratory",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with normal lung function tests and stable disease in remission."
+      },
+      "seconds": 5.5
+    },
+    {
+      "id": "test-056",
+      "hard": false,
+      "key": {
+        "specialty": "neurology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The patient has been seizure-free for three years with a normal neurological exam and the referral is solely for administrative fitness-to-drive assessment."
+      },
+      "seconds": 5.9
+    },
+    {
+      "id": "test-057",
+      "hard": false,
+      "key": {
+        "specialty": "gastroenterology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "gastroenterology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient is asymptomatic with a simple cyst and the letter explicitly states 'Non-urgent review'."
+      },
+      "seconds": 5.8
+    },
+    {
+      "id": "test-058",
+      "hard": false,
+      "key": {
+        "specialty": "dermatology",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "dermatology",
+        "urgency": "routine",
+        "confidence": 1.0,
+        "reason": "The condition is stable with no signs of rapid deterioration or systemic illness."
+      },
+      "seconds": 5.2
+    },
+    {
+      "id": "test-059",
+      "hard": true,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "semi-urgent"
+      },
+      "second": {
+        "specialty": "neurology",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The condition is a confirmed moderate median neuropathy (carpal tunnel syndrome) with mild weakness but no rapid deterioration or emergency features."
+      },
+      "seconds": 6.3
+    },
+    {
+      "id": "test-060",
+      "hard": false,
+      "key": {
+        "specialty": "orthopaedics",
+        "urgency": "routine"
+      },
+      "second": {
+        "specialty": "orthopaedics",
+        "urgency": "routine",
+        "confidence": 0.95,
+        "reason": "The patient has mild symptoms managed with paracetamol and no signs of rapid deterioration or emergency."
+      },
+      "seconds": 5.7
+    }
+  ]
+}

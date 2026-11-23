@@ -39,11 +39,17 @@ Settings: `LLM_BASE_URL` (default `http://127.0.0.1:11434/v1`), `LLM_MODEL` (def
 - `prompts/`: the three prompt versions from the article
 - `data/dev.jsonl`: 120 letters for tuning
 - `data/test.jsonl`: 60 held-out letters, run once at the end
-- `results/`: the runs behind the numbers in the article
+- `bootstrap.py`: resamples the letters to show how much of a difference between runs could be chance
+- `labelcheck.py`: a second model (Qwen 3.5 9b) labels every letter blind, as a check on the answer key
+- `results/`: the runs behind the numbers in the article, including the label check and the review of each disagreement (`labelcheck-adjudication.json`)
 
 ## What gets measured
 
 Accuracy for specialty, urgency and both together; precision and recall per label; how many urgent letters were missed or sent to routine; a triage cost that weights dangerous mistakes heavily; time per letter; and a sweep showing what happens if letters below a confidence bar go to a person.
+
+## Limits
+
+The letters are synthetic and no clinician reviewed the labels; a second model checked them instead. There are 24 urgent letters in the dev set and 12 in the test set, so small differences can be chance. Only Gemma 4 was tested.
 
 ## Licence
 
